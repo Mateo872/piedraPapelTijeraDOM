@@ -1,8 +1,8 @@
-#Piedra, papel o tijeras
+# Piedra, papel o tijeras
 
 Este código es un juego básico de piedra, papel o tijera en el que el usuario elige una carta y la computadora genera una carta al azar. El objetivo es determinar quién gana según las reglas del juego.
 
-#Reglas
+# Reglas
 
 - Las reglas del juego son las siguientes:
 
