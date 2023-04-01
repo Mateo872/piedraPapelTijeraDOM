@@ -15,6 +15,93 @@
     <title>Piedra papel Tijera</title>
   </head>
   <body>
+    <main>
+      <section class="d-flex justify-content-center align-items-center vh-100">
+        <article class="container" data-container-register>
+          <h1 class="text-center">Ingrese su nombre</h1>
+          <form class="form-inline justify-content-center">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control my-3 text-center"
+                id="nameInput"
+                placeholder="Ingrese su nombre"
+              />
+            </div>
+            <p
+              class="border border-2 border-danger text-danger p-1 text-center rounded d-none"
+            >
+              No puede estar vacío
+            </p>
+            <button type="submit" class="btn btn-primary w-100 btn-submit">
+              Aceptar
+            </button>
+          </form>
+        </article>
+        <article class="container d-none" data-container-cards>
+          <h2 class="text-center mb-3"></h2>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+              <div class="card card-hover text-center card-rock">
+                <div class="card-body">
+                  <h5 class="card-title">Piedra</h5>
+                  <p class="card-text">👊🏽</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+              <div class="card card-hover text-center card-paper">
+                <div class="card-body">
+                  <h5 class="card-title">Papel</h5>
+                  <p class="card-text">📄</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card card-hover text-center card-scissors">
+                <div class="card-body">
+                  <h5 class="card-title">Tijera</h5>
+                  <p class="card-text">✂</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p
+                class="border border-2 border-danger text-danger p-1 text-center rounded d-none mb-0 mt-4"
+              >
+                Tenés que hacer una jugada
+              </p>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 mt-4 p-2"
+                data-play-btn
+              >
+                Jugar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article id="results" class="container d-none">
+          <h3 class="text-center mb-4">Resultados:</h3>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 my-4 card-result">
+              <h4 class="text-center card-title-user"></h4>
+              <div id="card-user"></div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 my-4 card-result">
+              <h4 class="text-center card-title-pc"></h4>
+              <div id="card-computer"></div>
+            </div>
+          </div>
+          <h4 id="winner" class="text-center"></h4>
+          <div class="d-flex justify-content-center mt-2">
+            <button id="replayBtn" class="btn btn-primary">
+              Volver a jugar
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
     <script src="./js/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"

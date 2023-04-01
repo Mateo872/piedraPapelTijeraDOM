@@ -3,3 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #bbbbbb;
+}
+
+
+h1 {
+    font-size: 1.1rem;
+}
+
+.card-hover {
+    transition: .3s;
+    border: 2px solid #343a40;
+}
+
+.card-hover:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #343a40;
+    border: 2px solid #ffa500;
+}
+
+.card:hover .card-title {
+    color: #fff;
+}
+
+[data-container-register] {
+    width: 75%;
+}
+
+.card-result {
+    width: 16rem;
+}
+
+#winner {
+    font-size: 1.6rem;
+}
+
+@media (min-width:767px) {
+    [data-container-register] {
+        width: 50%;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:989px) {
+    [data-container-register] {
+        width: 30%;
+    }
+
+    [data-container-cards] {
+        width: 45%;
+    }
+}
