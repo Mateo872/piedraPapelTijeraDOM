@@ -133,6 +133,12 @@ function play() {
 
 const replayBtn = document.querySelector("#replayBtn");
 
+const resetBtn = document.querySelector("#resetBtn");
+
+resetBtn.addEventListener("click", () => {
+  location.reload();
+});
+
 replayBtn.addEventListener("click", () => {
   resetGame();
   cardsContainer.classList.remove("d-none");
